@@ -1,5 +1,5 @@
 import React from 'react'
-import MarketingComponent from './components/MarketingComponent'
+import MarketingComponent from './components/MarketingComponent';
 
 export default function App() {
     console.log('hello from container')
