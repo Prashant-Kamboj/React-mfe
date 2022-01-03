@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import MarketingComponent from './components/MarketingComponent';
 
 export default function App() {
