@@ -1,4 +1,4 @@
-import { mount } from 'marketing/MarketingApp';
+import { mount } from 'auth/AuthApp';
 import React, {useEffect, useRef} from 'react'
 import { useHistory } from 'react-router-dom';
 
@@ -10,7 +10,6 @@ export default function MarketingComponent() {
        const {onParentNavigate} = mount(ref.current, {
             initialPath: history.location.pathname,
             onNavigate: ({pathname: nextPathname}) => {
-                console.log(nextPathname,'inside navigation of container');
                 const { pathname } = history.location;
                 if(pathname !== nextPathname) {
                     history.push(nextPathname);

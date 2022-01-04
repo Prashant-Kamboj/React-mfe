@@ -12,11 +12,15 @@ const devConfig = {
             index: 'index.html'
         }
     },
+    output:{
+        publicPath: 'http://localhost:3000/'
+    },
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                marketing: 'marketing@http://localhost:3002/remoteEntry.js'
+                marketing: 'marketing@http://localhost:3002/remoteEntry.js',
+                auth:'auth@http://localhost:3003/remoteEntry.js'
             },
             shared: packgeJson.dependencies
         }),
