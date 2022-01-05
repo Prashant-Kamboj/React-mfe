@@ -8,9 +8,10 @@ const devConfig = {
     mode:'development',
     devServer: {
         port: 3000,
-        historyApiFallback: {
-            index: 'index.html'
-        }
+        // historyApiFallback: {
+        //     index: 'index.html'
+        // }
+        historyApiFallback: true
     },
     output:{
         publicPath: 'http://localhost:3000/'
