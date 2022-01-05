@@ -5,6 +5,7 @@ import { createMemoryHistory, createBrowserHistory } from 'history';
 
 
 const mount = (el, { onNavigate, defaultHistory , initialPath}) => {
+    console.log(onNavigate,'navigate-auth')
     const history = defaultHistory || createMemoryHistory({
         initialEntries:[initialPath]
     });
